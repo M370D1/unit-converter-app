@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple, fast unit converter for length, mass, and temperature.">
+  <title>Unit Converter | Convert with ease</title>
+  <link rel="stylesheet" href="unit-converter.css">
+  <script src="unit-converter.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Convertly home">
+      <span class="brand-mark" aria-hidden="true">↔</span>
+      <span>convertly</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#converter" aria-current="page">Converter</a>
+      <a href="#how-it-works">How it works</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span aria-hidden="true"></span> A little less math, a lot more clarity</p>
+      <h1 id="page-title">Make every unit <span>make sense.</span></h1>
+      <p class="intro-copy">A quick, no-fuss way to convert the measurements you use every day.</p>
+    </section>
+
+    <section class="converter-card" id="converter" aria-labelledby="converter-title">
+      <div class="card-heading">
+        <div>
+          <p class="card-kicker">Your conversion</p>
+          <h2 id="converter-title">Convert units</h2>
+        </div>
+        <span class="card-symbol" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="category-field">
+        <label for="category">What are you converting?</label>
+        <select id="category" name="category">
+          <option value="length">Length</option>
+          <option value="mass">Mass</option>
+          <option value="temperature">Temperature</option>
+          <option value="currency">Currency</option>
+        </select>
+      </div>
+
+      <div class="conversion-fields">
+        <div class="unit-field">
+          <label for="amount">Amount</label>
+          <div class="input-wrap">
+            <input id="amount" name="amount" type="number" inputmode="decimal" step="any" placeholder="Enter a value">
+            <select id="from-unit" name="from-unit" aria-label="Convert from"></select>
+          </div>
+        </div>
+
+        <button class="swap-button" id="swap" type="button" aria-label="Swap units" title="Swap units">↔</button>
+
+        <div class="unit-field">
+          <label for="result">Converted amount</label>
+          <div class="result-wrap">
+            <output id="result" for="amount from-unit to-unit" aria-live="polite">—</output>
+            <select id="to-unit" name="to-unit" aria-label="Convert to"></select>
+          </div>
+        </div>
+      </div>
+
+      <p class="conversion-note" id="conversion-note" aria-live="polite">Choose your units and enter an amount to get started.</p>
+      <button class="clear-button" id="clear" type="button">Clear amount</button>
+    </section>
+
+    <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
+      <p class="section-kicker">Simple by design</p>
+      <h2 id="how-title">Three steps. That's it.</h2>
+      <ol class="steps">
+        <li><span>01</span><strong>Pick a category</strong><p>Choose length, mass, temperature, or currency.</p></li>
+        <li><span>02</span><strong>Set your units</strong><p>Select what you're converting from and to.</p></li>
+        <li><span>03</span><strong>Get your answer</strong><p>Your result updates as soon as you type.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark" aria-hidden="true">↔</span>
+      <span>convertly</span>
+    </a>
+    <p>Useful conversions, minus the guesswork.</p>
+    <a class="back-to-top" href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
