@@ -23,9 +23,16 @@ const unitSets = {
     { value: "kelvin", label: "Kelvin (K)", toBase: value => value - 273.15, fromBase: value => value + 273.15 }
   ],
   currency: [
-    { value: "usd", label: "US Dollar (USD)", rate: 1 },
-    { value: "eur", label: "Euro (EUR)", rate: 0.92 },
-    { value: "gbp", label: "British Pound (GBP)", rate: 0.73 }
+    { value: "usd", label: "US Dollar (USD)" },
+    { value: "eur", label: "Euro (EUR)" },
+    { value: "gbp", label: "British Pound (GBP)" },
+    { value: "jpy", label: "Japanese Yen (JPY)" },
+    { value: "cad", label: "Canadian Dollar (CAD)" },
+    { value: "aud", label: "Australian Dollar (AUD)" },
+    { value: "chf", label: "Swiss Franc (CHF)" },
+    { value: "cny", label: "Chinese Yuan (CNY)" },
+    { value: "inr", label: "Indian Rupee (INR)" },
+    { value: "mxn", label: "Mexican Peso (MXN)" }
   ]
 };
 
